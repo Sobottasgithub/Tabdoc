@@ -1,5 +1,5 @@
 {
-  description = "Docusaurus";
+  description = "Tabdoc - documentation for the Tablo ecosystem";
 
   inputs = {
     flake-parts.url = "github:hercules-ci/flake-parts";

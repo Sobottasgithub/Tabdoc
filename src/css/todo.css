@@ -1,44 +1,48 @@
+/* TODO marker — see src/components/Admonitions/ToDo.js */
 .todo-container {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    font-family: sans-serif;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
 }
 
 /* Inline label */
 .todo-label {
-    color: #8a6d3b;
-    font-size: 0.85em;
-    font-weight: 600;
-    text-decoration: underline dotted;
+  color: #8a6d3b;
+  font-size: 0.85em;
+  font-weight: 600;
+  text-decoration: underline dotted;
+}
+
+[data-theme='dark'] .todo-label {
+  color: #e0b964;
 }
 
 /* Tooltip box */
 .todo-tooltip {
-    visibility: hidden;
-    opacity: 0;
-    width: max-content;
-    max-width: 250px;
-    background-color: #fcf8e3;
-    color: #66512c;
-    text-align: left;
-    border: 1px solid #faebcc;
-    border-radius: 4px;
-    padding: 6px 8px;
-    font-size: 0.85em;
-    font-weight: normal;
-    position: absolute;
-    z-index: 100;
-    top: -200%;
-    left: 50%;
-    transform: translateX(-50%);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    transition: opacity 0.2s ease;
-    pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  width: max-content;
+  max-width: 250px;
+  background-color: #fcf8e3;
+  color: #66512c;
+  text-align: left;
+  border: 1px solid #faebcc;
+  border-radius: 4px;
+  padding: 6px 8px;
+  font-size: 0.85em;
+  font-weight: normal;
+  position: absolute;
+  z-index: 100;
+  top: -200%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.2s ease;
+  pointer-events: none;
 }
 
 /* Show tooltip on hover */
 .todo-container:hover .todo-tooltip {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }

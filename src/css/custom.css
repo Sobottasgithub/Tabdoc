@@ -1,78 +1,54 @@
-/* stylelint-disable docusaurus/copyright-header */
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Global styles. The classic preset bundles Infima; these variables override
+ * its defaults. See https://docusaurus.io/docs/styling-layout
  */
 
-/* You can override the default Infima variables here. */
 :root {
-    --ifm-color-primary: #01a99f;
-    --ifm-color-primary-dark: #01948b;
-    --ifm-color-primary-darker: #006f68;
-    --ifm-color-primary-darkest: #004944;
-    --ifm-color-primary-light: #929598;
-    --ifm-color-primary-lighter: #929598;
-    --ifm-color-primary-lightest: #e4e7e8;
-    --ifm-code-font-size: 95%;
-    --ifm-background-color: #ffff;
-    --ifm-font-family-base: 'Clan Book', sans-serif;
-    --ifm-heading-h1-font-size: 34px; /* TODO */
-    --ifm-heading-h2-font-size: 24px; /* TODO */
-    --ifm-heading-h3-font-size: 14px; /* TODO */
-    --ifm-heading-color: #221f21;
-    --ifm-heading-font-weight: 200;
-    --ifm-navbar-background-color: var(--ifm-color-primary);
-    --wiki-color-navbar-sidebar-background: var(--ifm-color-primary-lightest);
-    --wiki-color-black: #0b1a22;
-    --wiki-color-night: #000000;
+  --ifm-color-primary: #0e9f8c;
+  --ifm-color-primary-dark: #0d8f7e;
+  --ifm-color-primary-darker: #0c8777;
+  --ifm-color-primary-darkest: #0a6f62;
+  --ifm-color-primary-light: #10af9a;
+  --ifm-color-primary-lighter: #11b7a1;
+  --ifm-color-primary-lightest: #16d6bd;
 
-    --ifm-navbar-link-color: var(--wiki-color-black);
-    --ifm-navbar-link-hover-color: var(--ifm-color-primary-darker);
-
-    --ifm-footer-background-color: var(--ifm-color-primary);
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-[data-theme="dark"] {
-    --ifm-background-color: var(--wiki-color-black);
-    --ifm-heading-color: var(--ifm-color-primary-lightest);
-    --wiki-color-navbar-sidebar-background: var(--ifm-background-color);
+[data-theme='dark'] {
+  --ifm-color-primary: #2ed3bd;
+  --ifm-color-primary-dark: #22c7b1;
+  --ifm-color-primary-darker: #20bca7;
+  --ifm-color-primary-darkest: #1a9b89;
+  --ifm-color-primary-light: #47d9c6;
+  --ifm-color-primary-lighter: #53dbca;
+  --ifm-color-primary-lightest: #79e4d6;
+
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-.footer {
-    --ifm-footer-background-color: var(--wiki-color-night);
-    /* Shadow to separate footer from content */
-    box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-sidebar {
-    background-color: var(--wiki-color-navbar-sidebar-background);
-}
-
-.navbar-sidebar__brand {
-    background-color: var(--ifm-navbar-background-color);
-}
-
+/* In-progress admonition — see src/components/Admonitions/InProgress.js */
 .admonition-inProgress {
-    border-left: 4px solid #00A726;
-    background-color: #e6ffe6;
-    padding: 1em;
-    border-radius: 6px;
-    margin: 1em 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #00a726;
+  background-color: #e6ffe6;
+  padding: 1em;
+  border-radius: 6px;
+  margin: 1em 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .admonition-inProgress .admonition-heading {
-    font-weight: bold;
-    color: #007a00;
-    margin-bottom: 0.5em;
-    text-align: center;
+  font-weight: bold;
+  color: #007a00;
+  margin-bottom: 0.5em;
+  text-align: center;
 }
 
+[data-theme='dark'] .admonition-inProgress {
+  background-color: rgba(0, 167, 38, 0.12);
+}
 
-.docusaurus-highlight-code-line {
-    background-color: rgb(72, 77, 91);
-    display: block;
-    margin: 0 calc(-1 * var(--ifm-pre-padding));
-    padding: 0 var(--ifm-pre-padding);
+[data-theme='dark'] .admonition-inProgress .admonition-heading {
+  color: #4ade80;
 }

@@ -26,7 +26,7 @@ yarn-error.log*
 result
 .direnv/
 
-# Docker scripts
+# Prettier / sed backups
 *.bak
 
 # IDEA

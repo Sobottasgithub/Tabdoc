@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Tabdoc">
+  <rect x="2.5" y="4.5" width="27" height="23" rx="3.5" fill="none" stroke="#0e9f8c" stroke-width="2.5"/>
+  <path d="M2.5 12.5h27" stroke="#0e9f8c" stroke-width="2.5"/>
+  <path d="M11.5 12.5v15M20.5 12.5v15" stroke="#0e9f8c" stroke-width="2" opacity="0.55"/>
+  <path d="M2.5 20h27" stroke="#0e9f8c" stroke-width="2" opacity="0.55"/>
+  <rect x="4" y="6" width="24" height="5" rx="1.5" fill="#0e9f8c" opacity="0.35"/>
+</svg>

@@ -1,8 +1,0 @@
-{
-  "theme.Admonition.info": { "message": "Information" },
-  "theme.Admonition.tip": { "message": "Tipp" },
-  "theme.Admonition.note": { "message": "Hinweis" },
-  "theme.Admonition.caution": { "message": "Vorsicht" },
-  "theme.Admonition.danger": { "message": "Gefahr" },
-  "theme.Admonition.warning": { "message": "Warnung" }
-}
