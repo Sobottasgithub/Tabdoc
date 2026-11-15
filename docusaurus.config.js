@@ -34,7 +34,7 @@ module.exports = {
       {
         hashed: true,
         indexBlog: false,
-        docsRouteBasePath: '/',
+        docsRouteBasePath: '/docs',
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
       },
@@ -119,7 +119,7 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          routeBasePath: '/',
+          routeBasePath: '/docs',
           editUrl: 'https://github.com/Sobottasgithub/Tabdoc/tree/master/',
           showLastUpdateTime: true,
         },
