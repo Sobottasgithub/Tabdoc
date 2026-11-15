@@ -87,7 +87,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} the Tablo contributors.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Patrick Schulze`,
     },
     prism: {
       additionalLanguages: ['bash', 'cpp', 'cmake', 'nix', 'json', 'yaml'],
