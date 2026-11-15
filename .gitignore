@@ -31,3 +31,6 @@ result
 
 # IDEA
 .idea/
+
+# Local scratch (not published)
+/local/

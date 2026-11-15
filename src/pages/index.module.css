@@ -1,0 +1,95 @@
+/* Front page — see src/pages/index.js */
+
+.hero {
+  padding: 5rem 0 4rem;
+  text-align: center;
+  background: linear-gradient(
+    180deg,
+    var(--ifm-color-primary-lightest) 0%,
+    var(--ifm-background-color) 100%
+  );
+}
+
+[data-theme='dark'] .hero {
+  background: linear-gradient(
+    180deg,
+    rgba(46, 211, 189, 0.12) 0%,
+    var(--ifm-background-color) 100%
+  );
+}
+
+.heroLogo {
+  margin-bottom: 1rem;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.heroTagline {
+  font-size: 1.25rem;
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 2rem;
+}
+
+.heroButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.projects {
+  padding: 3rem 0 4rem;
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.projectGrid {
+  row-gap: 1.5rem;
+}
+
+.projectCard {
+  display: block;
+  height: 100%;
+  padding: 1.5rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-global-radius);
+  background-color: var(--ifm-background-surface-color);
+  color: inherit;
+  transition:
+    border-color var(--ifm-transition-fast),
+    transform var(--ifm-transition-fast);
+}
+
+.projectCard:hover {
+  border-color: var(--ifm-color-primary);
+  text-decoration: none;
+  color: inherit;
+  transform: translateY(-2px);
+}
+
+.projectName {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--ifm-color-primary);
+}
+
+.projectSummary {
+  margin-bottom: 0;
+  color: var(--ifm-color-emphasis-700);
+}
+
+@media screen and (max-width: 996px) {
+  .hero {
+    padding: 3rem 1rem 2.5rem;
+  }
+
+  .heroTitle {
+    font-size: 2.25rem;
+  }
+}

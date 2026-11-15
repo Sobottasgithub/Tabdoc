@@ -13,6 +13,7 @@ module.exports = {
 
   onBrokenLinks: 'throw',
   markdown: {
+    mermaid: true,
     hooks: {
       onBrokenMarkdownLinks: 'warn',
     },
@@ -25,7 +26,25 @@ module.exports = {
     locales: ['en'],
   },
 
+  themes: [
+    '@docusaurus/theme-mermaid',
+    [
+      // Offline search. The index is built at compile time, no external service.
+      '@easyops-cn/docusaurus-search-local',
+      {
+        hashed: true,
+        indexBlog: false,
+        docsRouteBasePath: '/docs',
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+      },
+    ],
+  ],
+
   themeConfig: {
+    mermaid: {
+      theme: { light: 'neutral', dark: 'dark' },
+    },
     navbar: {
       title: 'Tablo',
       logo: {
@@ -100,7 +119,7 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          routeBasePath: '/',
+          routeBasePath: '/docs',
           editUrl: 'https://github.com/Sobottasgithub/Tabdoc/tree/master/',
           showLastUpdateTime: true,
         },
