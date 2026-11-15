@@ -18,7 +18,7 @@ module.exports = {
     },
   },
 
-  favicon: 'img/favicon.svg',
+  favicon: 'img/logo.svg',
 
   i18n: {
     defaultLocale: 'en',
