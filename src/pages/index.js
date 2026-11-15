@@ -52,7 +52,7 @@ function Hero() {
           width={96}
           height={96}
         />
-        <h1 className={styles.heroTitle}>{siteConfig.title}</h1>
+        <h1 className={styles.heroTitle}>Tablo</h1>
         <p className={styles.heroTagline}>{siteConfig.tagline}</p>
         <div className={styles.heroButtons}>
           <Link className="button button--primary button--lg" to="/docs">
@@ -74,7 +74,7 @@ function Projects() {
   return (
     <section className={styles.projects}>
       <div className="container">
-        <h2 className={styles.sectionTitle}>The ecosystem</h2>
+        <h2 className={styles.sectionTitle}>Projects</h2>
         <div className={clsx('row', styles.projectGrid)}>
           {projects.map((project) => (
             <div key={project.name} className="col col--4">
