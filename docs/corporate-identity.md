@@ -1,6 +1,6 @@
 ---
 title: Corporate Identity
-sidebar_position: 2
+sidebar_position: 8
 ---
 
 # Corporate Identity

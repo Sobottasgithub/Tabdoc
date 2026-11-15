@@ -1,6 +1,6 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'Tabdoc',
+  title: 'Tablo docs',
   tagline: 'Tablo documentation',
 
   // GitHub Pages: https://sobottasgithub.github.io/Tabdoc/
