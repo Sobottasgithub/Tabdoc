@@ -1,0 +1,79 @@
+variables:
+  IMAGE: "$CI_REGISTRY/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME/wiki-ci:2.2.0"
+  MEDIA_PACKAGE: "lfs-media"
+  MEDIA_VERSION: "$CI_COMMIT_SHA"
+
+image: $IMAGE
+
+stages:
+  - test
+  - rewrite
+  - build
+  - deploy
+
+lint:
+  stage: test
+  tags:
+    - shared-default
+  script:
+    - prettier -c docs/**
+
+rewrite-lfs-links:
+  stage: rewrite
+  tags:
+    - shared-default
+  script:
+    - |
+      find docs/ -type f | while read -r file; do
+        sed -i -E "s|\((/img/[^)]+)\)|($CI_API_V4_URL/projects/$CI_PROJECT_ID/packages/generic/$MEDIA_PACKAGE/$MEDIA_VERSION/static\1)|g" "$file"
+        sed -i -E "s|\"(/img/[^)]+)\"|\"$CI_API_V4_URL/projects/$CI_PROJECT_ID/packages/generic/$MEDIA_PACKAGE/$MEDIA_VERSION/static\1\"|g" "$file"
+      done
+    - mv docs/ fixed_docs
+    - touch fixed_docs/.fixed
+  artifacts:
+    paths:
+      - fixed_docs
+    expire_in: 1 hour
+    
+build:
+  stage: build
+  tags:
+    - shared-default
+  script:
+    - git lfs ls-files -n | xargs rm
+    - rm -rf docs; mv fixed_docs/ docs
+    - yarn install
+    - yarn build
+    - mv ./build public
+  dependencies:
+    - rewrite-lfs-links
+  artifacts:
+    paths:
+      - public
+    expire_in: 1 hour
+
+publish-lfs-package:
+  stage: build
+  tags:
+    - shared-default
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+  script:
+    - |
+      git lfs ls-files -n | while read file; do
+        curl --header "JOB-TOKEN: $CI_JOB_TOKEN" \
+             --upload-file "$file" \
+             "$CI_API_V4_URL/projects/$CI_PROJECT_ID/packages/generic/$MEDIA_PACKAGE/$MEDIA_VERSION/$file"
+      done
+
+create-pages:
+  stage: deploy
+  tags:
+    - shared-default
+  dependencies:
+    - build
+  script:
+    - echo "Deploying pages"
+  pages: true
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH

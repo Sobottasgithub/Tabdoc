@@ -1,0 +1,43 @@
+/* Archived Admonition */
+.admonition-archived {
+    border-left: 6px solid #888888;
+    background: linear-gradient(90deg, #f8f8f8 0%, #e6e6e6 100%);
+    padding: 1em 1.2em;
+    border-radius: 10px;
+    margin: 1.5em 0;
+    position: relative;
+    overflow: hidden;
+    font-family: sans-serif;
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.admonition-archived:hover {
+    transform: translateY(-2px);
+}
+
+.admonition-archived .admonition-heading {
+    font-weight: 600;
+    color: #555555;
+    margin-bottom: 0.6em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.admonition-archived .admonition-heading::before {
+    content: "🗄️"; /* archive emoji */
+    display: inline-block;
+    animation: pulse 3s infinite;
+}
+
+.admonition-archived .admonition-content {
+    color: #666666;
+    font-style: italic;
+}
+
+/* subtle pulse animation - vibecoded */
+@keyframes pulse {
+    0%, 100% { transform: scale(2); opacity: 0.7; }
+    50% { transform: scale(1.2); opacity: 1; }
+}

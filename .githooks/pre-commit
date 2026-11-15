@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+if ! which prettier &> /dev/null && ! which prettier.cmd &> /dev/null; then
+    echo "Warn: 'prettier' or 'prettier.cmd' not found"
+    exit 0
+fi
+
+if which prettier &> /dev/null; then
+    PRETTIER_CMD="prettier"
+else
+    PRETTIER_CMD="prettier.cmd" # I hate windows
+fi
+
+PRETTIER_OUTPUT=$($PRETTIER_CMD --write "docs/**" | grep -v "(unchanged)")
+
+if [ -n "$PRETTIER_OUTPUT" ]; then
+    CHANGED=$(echo "$PRETTIER_OUTPUT" | awk '{print $1}') 
+    echo "$CHANGED" | xargs git diff
+    echo "The 'pre-commit' hook made changes to apply the required formatting."
+    echo "This commit will be failed, please review the changes and recommit."
+    echo "$CHANGED" | xargs git add
+    exit 1
+fi
+
+exit 0
