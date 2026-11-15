@@ -1,7 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Tabdoc">
-  <rect x="2.5" y="4.5" width="27" height="23" rx="3.5" fill="none" stroke="#0e9f8c" stroke-width="2.5"/>
-  <path d="M2.5 12.5h27" stroke="#0e9f8c" stroke-width="2.5"/>
-  <path d="M11.5 12.5v15M20.5 12.5v15" stroke="#0e9f8c" stroke-width="2" opacity="0.55"/>
-  <path d="M2.5 20h27" stroke="#0e9f8c" stroke-width="2" opacity="0.55"/>
-  <rect x="4" y="6" width="24" height="5" rx="1.5" fill="#0e9f8c" opacity="0.35"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="160"
+   height="160"
+   viewBox="0 0 42.333332 42.333333"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (ebf0e94, 2025-05-08)"
+   sodipodi:docname="LogoBlue.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="4.69"
+     inkscape:cx="80.490405"
+     inkscape:cy="78.891258"
+     inkscape:window-width="1920"
+     inkscape:window-height="987"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#1122ff;fill-opacity:1;stroke-width:0.22389"
+       id="rect1"
+       width="42.333332"
+       height="42.333332"
+       x="6.357829e-07"
+       y="6.357829e-07" />
+    <path
+       id="rect2"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.487209"
+       d="M 7.273458,5.2653117 2.6458334,11.350728 h 4.6493287 4.6054039 2.676839 l 9.32863,18.308961 h -7.74113 l 7.407817,7.408333 7.408333,-7.408333 h -0.01033 l 0.04961,-0.02532 L 21.704108,11.35073 H 39.6875 V 5.2653117 H 7.2951621 v 0.028939 z" />
+  </g>
 </svg>
