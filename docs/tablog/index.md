@@ -5,9 +5,9 @@ sidebar_position: 1
 
 # Tablog
 
-The logging library shared across Tablo.
+The Tablo logging library.
 
-- Source: [Sobottasgithub/Tablog](https://github.com/Sobottasgithub/Tablog)
+- Github Page: [Sobottasgithub/Tablog](https://github.com/Sobottasgithub/Tablog)
 
 :::note
 

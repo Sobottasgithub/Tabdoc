@@ -34,7 +34,7 @@ const projects = [
   },
   {
     name: 'Tablog',
-    summary: 'The logging library shared across Tablo',
+    summary: 'Tablo logging',
     repo: 'https://github.com/Sobottasgithub/Tablog',
   },
 ];

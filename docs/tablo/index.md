@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # Tablo
 
-- Source: [Sobottasgithub/Tablo](https://github.com/Sobottasgithub/Tablo)
+- Github Page: [Sobottasgithub/Tablo](https://github.com/Sobottasgithub/Tablo)
 
 :::note
 
