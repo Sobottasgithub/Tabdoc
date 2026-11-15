@@ -26,6 +26,9 @@ module.exports = {
     locales: ['en'],
   },
 
+  // Patches selection.transition() back in for mermaid — see the module header.
+  clientModules: ['./src/clientModules/d3Transition.js'],
+
   themes: [
     '@docusaurus/theme-mermaid',
     [
