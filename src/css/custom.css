@@ -1,54 +1,77 @@
 /**
  * Global styles. The classic preset bundles Infima; these variables override
  * its defaults. See https://docusaurus.io/docs/styling-layout
+ *
+ * The palette is the Tablo corporate identity — documented in
+ * docs/corporate-identity.md. Change it there too if you change it here.
  */
 
 :root {
-  --ifm-color-primary: #0e9f8c;
-  --ifm-color-primary-dark: #0d8f7e;
-  --ifm-color-primary-darker: #0c8777;
-  --ifm-color-primary-darkest: #0a6f62;
-  --ifm-color-primary-light: #10af9a;
-  --ifm-color-primary-lighter: #11b7a1;
-  --ifm-color-primary-lightest: #16d6bd;
+  /* Brand anchor: the blue from static/img/logo.svg. Logo and accents only. */
+  --tablo-blue: #1122ff;
+  --tablo-ink: #0b1030;
+
+  /* UI primary — the brand blue, tempered so large fills do not vibrate. */
+  --ifm-color-primary: #1b2fe6;
+  --ifm-color-primary-dark: #1729cf;
+  --ifm-color-primary-darker: #1527c1;
+  --ifm-color-primary-darkest: #1220a1;
+  --ifm-color-primary-light: #3043e8;
+  --ifm-color-primary-lighter: #3e4fea;
+  --ifm-color-primary-lightest: #6c79ef;
+
+  /* Status accents. Semantic, deliberately outside the blue family. */
+  --tablo-progress: #1f8f4a;
+  --tablo-progress-ink: #156334;
+  --tablo-todo: #9a6b1a;
+  --tablo-archived: #6b7384;
 
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(17, 34, 255, 0.1);
 }
 
 [data-theme='dark'] {
-  --ifm-color-primary: #2ed3bd;
-  --ifm-color-primary-dark: #22c7b1;
-  --ifm-color-primary-darker: #20bca7;
-  --ifm-color-primary-darkest: #1a9b89;
-  --ifm-color-primary-light: #47d9c6;
-  --ifm-color-primary-lighter: #53dbca;
-  --ifm-color-primary-lightest: #79e4d6;
+  --tablo-blue: #4d5cff;
+  --tablo-ink: #e6e9f5;
 
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #8a95ff;
+  --ifm-color-primary-dark: #707eff;
+  --ifm-color-primary-darker: #6171ff;
+  --ifm-color-primary-darkest: #3347ff;
+  --ifm-color-primary-light: #9ea8ff;
+  --ifm-color-primary-lighter: #adb6ff;
+  --ifm-color-primary-lightest: #ccd1ff;
+
+  /* Cool-tinted neutrals, so even the greys belong to the blue family. */
+  --ifm-background-color: #0f1117;
+  --ifm-background-surface-color: #171a24;
+
+  --tablo-progress: #4ade80;
+  --tablo-progress-ink: #4ade80;
+  --tablo-todo: #e0b964;
+  --tablo-archived: #9aa3b5;
+
+  --docusaurus-highlighted-code-line-bg: rgba(138, 149, 255, 0.16);
 }
 
 /* In-progress admonition — see src/components/Admonitions/InProgress.js */
 .admonition-inProgress {
-  border-left: 4px solid #00a726;
-  background-color: #e6ffe6;
+  border-left: 4px solid var(--tablo-progress);
+  background-color: rgba(31, 143, 74, 0.08);
   padding: 1em;
   border-radius: 6px;
   margin: 1em 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px rgba(11, 16, 48, 0.06);
 }
 
 .admonition-inProgress .admonition-heading {
   font-weight: bold;
-  color: #007a00;
+  color: var(--tablo-progress-ink);
   margin-bottom: 0.5em;
   text-align: center;
 }
 
 [data-theme='dark'] .admonition-inProgress {
-  background-color: rgba(0, 167, 38, 0.12);
-}
-
-[data-theme='dark'] .admonition-inProgress .admonition-heading {
-  color: #4ade80;
+  background-color: rgba(74, 222, 128, 0.1);
+  box-shadow: none;
 }

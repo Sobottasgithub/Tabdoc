@@ -7,14 +7,10 @@
 
 /* Inline label */
 .todo-label {
-  color: #8a6d3b;
+  color: var(--tablo-todo);
   font-size: 0.85em;
   font-weight: 600;
   text-decoration: underline dotted;
-}
-
-[data-theme='dark'] .todo-label {
-  color: #e0b964;
 }
 
 /* Tooltip box */
@@ -23,10 +19,11 @@
   opacity: 0;
   width: max-content;
   max-width: 250px;
-  background-color: #fcf8e3;
-  color: #66512c;
+  background-color: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
   text-align: left;
-  border: 1px solid #faebcc;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-top: 3px solid var(--tablo-todo);
   border-radius: 4px;
   padding: 6px 8px;
   font-size: 0.85em;
@@ -36,7 +33,7 @@
   top: -200%;
   left: 50%;
   transform: translateX(-50%);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(11, 16, 48, 0.15);
   transition: opacity 0.2s ease;
   pointer-events: none;
 }
