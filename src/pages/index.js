@@ -10,34 +10,31 @@ import styles from './index.module.css';
 const projects = [
   {
     name: 'Tablo',
-    summary:
-      'The analysis engine itself: a master, its compute nodes and a client that loads CSV files.',
     repo: 'https://github.com/Sobottasgithub/Tablo',
   },
   {
     name: 'TDFS',
-    summary:
-      'Tablo Distributed File System — name server, compute nodes and a CLI for replicated storage.',
+    summary: 'Tablo Distributed File System',
     repo: 'https://github.com/Sobottasgithub/TDFS',
   },
   {
     name: 'TTP2',
-    summary: 'Tablo Transfer Protocol 2 — typed, ASN.1-encoded messaging over TCP and UDP.',
+    summary: 'Tablo Transfer Protocol 2',
     repo: 'https://github.com/Sobottasgithub/TTP2',
   },
   {
     name: 'TQL',
-    summary: 'Tablo Query Language — an SQL-flavoured query language with aggregates and filters.',
+    summary: 'Tablo Query Language',
     repo: 'https://github.com/Sobottasgithub/TQL',
   },
   {
     name: 'TUD',
-    summary: 'Tablo UDP Discovery — client/server and peer discovery over broadcast.',
+    summary: 'Tablo UDP Discovery',
     repo: 'https://github.com/Sobottasgithub/TUD',
   },
   {
     name: 'Tablog',
-    summary: 'The logging library shared across the ecosystem, configurable from TOML.',
+    summary: 'The logging library shared across Tablo',
     repo: 'https://github.com/Sobottasgithub/Tablog',
   },
 ];
