@@ -1,7 +1,7 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Tabdoc',
-  tagline: 'Documentation for the Tablo ecosystem',
+  tagline: 'Tablo documentation',
 
   // GitHub Pages: https://sobottasgithub.github.io/Tabdoc/
   url: 'https://sobottasgithub.github.io',
@@ -27,7 +27,7 @@ module.exports = {
 
   themeConfig: {
     navbar: {
-      title: 'Tabdoc',
+      title: 'Tablo',
       logo: {
         alt: 'Tabdoc logo',
         src: 'img/logo.svg',
@@ -45,11 +45,12 @@ module.exports = {
           position: 'left',
           items: [
             { label: 'Tablo', href: 'https://github.com/Sobottasgithub/Tablo' },
-            { label: 'Tablog', href: 'https://github.com/Sobottasgithub/Tablog' },
-            { label: 'TQL', href: 'https://github.com/Sobottasgithub/TQL' },
-            { label: 'TTP2', href: 'https://github.com/Sobottasgithub/TTP2' },
-            { label: 'TUD', href: 'https://github.com/Sobottasgithub/TUD' },
             { label: 'TDFS', href: 'https://github.com/Sobottasgithub/TDFS' },
+            { label: 'TTP2', href: 'https://github.com/Sobottasgithub/TTP2' },
+            { label: 'TQL', href: 'https://github.com/Sobottasgithub/TQL' },
+            { label: 'TUD', href: 'https://github.com/Sobottasgithub/TUD' },
+            { label: 'Tablog', href: 'https://github.com/Sobottasgithub/Tablog' },
+            { label: 'Tabdoc', href: 'https://github.com/Sobottasgithub/Tabdoc' },
           ],
         },
         {
@@ -66,16 +67,16 @@ module.exports = {
           title: 'Tablo',
           items: [
             { label: 'Tablo', href: 'https://github.com/Sobottasgithub/Tablo' },
-            { label: 'Tablog', href: 'https://github.com/Sobottasgithub/Tablog' },
-            { label: 'TQL', href: 'https://github.com/Sobottasgithub/TQL' },
+            { label: 'TDFS', href: 'https://github.com/Sobottasgithub/TDFS' },
           ],
         },
         {
           title: 'Infrastructure',
           items: [
             { label: 'TTP2', href: 'https://github.com/Sobottasgithub/TTP2' },
+            { label: 'TQL', href: 'https://github.com/Sobottasgithub/TQL' },
             { label: 'TUD', href: 'https://github.com/Sobottasgithub/TUD' },
-            { label: 'TDFS', href: 'https://github.com/Sobottasgithub/TDFS' },
+            { label: 'Tablog', href: 'https://github.com/Sobottasgithub/Tablog' },
           ],
         },
         {
@@ -86,7 +87,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} the Tablo contributors. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} the Tablo contributors.`,
     },
     prism: {
       additionalLanguages: ['bash', 'cpp', 'cmake', 'nix', 'json', 'yaml'],
