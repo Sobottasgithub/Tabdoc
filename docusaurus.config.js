@@ -4,8 +4,8 @@ module.exports = {
   tagline: 'Tablo documentation',
 
   // GitHub Pages: https://sobottasgithub.github.io/Tabdoc/
-  url: 'https://sobottasgithub.github.io',
-  baseUrl: '/Tabdoc/',
+  url: 'https://tablo-cluster.net',
+  baseUrl: '/',
   organizationName: 'Sobottasgithub',
   projectName: 'Tabdoc',
   deploymentBranch: 'gh-pages',
