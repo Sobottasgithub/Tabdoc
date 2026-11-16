@@ -1,6 +1,6 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'Tabdoc',
+  title: 'Tablo docs',
   tagline: 'Tablo documentation',
 
   // GitHub Pages: https://sobottasgithub.github.io/Tabdoc/
@@ -25,6 +25,9 @@ module.exports = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+
+  // Patches selection.transition() back in for mermaid — see the module header.
+  clientModules: ['./src/clientModules/d3Transition.js'],
 
   themes: [
     '@docusaurus/theme-mermaid',

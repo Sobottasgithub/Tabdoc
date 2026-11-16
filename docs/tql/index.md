@@ -7,7 +7,7 @@ sidebar_position: 1
 
 Tablo Query Language.
 
-- Source: [Sobottasgithub/TQL](https://github.com/Sobottasgithub/TQL)
+- Github Page: [Sobottasgithub/TQL](https://github.com/Sobottasgithub/TQL)
 
 :::note
 

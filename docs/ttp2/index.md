@@ -7,7 +7,7 @@ sidebar_position: 1
 
 Tablo Transfer Protocol 2.
 
-- Source: [Sobottasgithub/TTP2](https://github.com/Sobottasgithub/TTP2)
+- Github Page: [Sobottasgithub/TTP2](https://github.com/Sobottasgithub/TTP2)
 
 :::note
 

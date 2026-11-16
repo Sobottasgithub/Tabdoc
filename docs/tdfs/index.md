@@ -7,7 +7,7 @@ sidebar_position: 1
 
 Tablo Distributed File System.
 
-- Source: [Sobottasgithub/TDFS](https://github.com/Sobottasgithub/TDFS)
+- Github Page: [Sobottasgithub/TDFS](https://github.com/Sobottasgithub/TDFS)
 
 :::note
 

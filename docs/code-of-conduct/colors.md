@@ -1,18 +1,14 @@
 ---
-title: Corporate Identity
+title: Colors
 sidebar_position: 2
 ---
 
-# Corporate Identity
+# Colors
 
-Tablo's visual identity is blue. The anchor is the blue in the logo
-(`static/img/logo.svg`); everything else on this page is derived from it, so the
-docs site, the logo, and anything else carrying the Tablo name read as one
-system.
+Tablos visual identity is blue.
 
-The palette lives in [`src/css/custom.css`](https://github.com/Sobottasgithub/Tabdoc/blob/master/src/css/custom.css)
-as CSS custom properties. Use the tokens — never a raw hex value — so a future
-change to the identity only has to happen in one place.
+View the color scheme is found in [`src/css/custom.css`](https://github.com/Sobottasgithub/Tabdoc/blob/master/src/css/custom.css)
+as CSS custom properties.
 
 ## Brand anchor
 
@@ -21,16 +17,11 @@ change to the identity only has to happen in one place.
 | `--tablo-blue` | `#1122FF` | `#4D5CFF` | Logo, brand marks, deliberate brand accents |
 | `--tablo-ink`  | `#0B1030` | `#E6E9F5` | Deep brand-tinted text and shadows          |
 
-`--tablo-blue` is the identity, not a UI colour. It is fully saturated and
-vibrates when used for large fills or long runs of text. Reserve it for the mark
-itself and for small, intentional accents.
+Do not use `--tablo-blue` to fill large spaces.
 
 ## UI primary
 
-The interface uses a tempered version of the brand blue — the same hue (234°),
-pulled back in lightness so buttons, links, and filled areas sit comfortably on
-a page. This is the standard Infima primary ramp, so Docusaurus picks it up
-everywhere automatically.
+Tablos ui primary colors. -dark is used for darkmode. -light is used for light mode. Do not mix.
 
 | Token                          | Light     | Dark      |
 | ------------------------------ | --------- | --------- |
@@ -41,11 +32,6 @@ everywhere automatically.
 | `--ifm-color-primary-light`    | `#3043E8` | `#9EA8FF` |
 | `--ifm-color-primary-lighter`  | `#3E4FEA` | `#ADB6FF` |
 | `--ifm-color-primary-lightest` | `#6C79EF` | `#CCD1FF` |
-
-Light mode flips the ramp relative to dark mode on purpose: on a white page the
-primary must be _darker_ than the background to stay readable, on a dark page it
-must be _lighter_. Both directions clear WCAG AA for body text — `#1B2FE6` on
-white is 8.1:1, `#8A95FF` on the dark background is 6.4:1.
 
 ## Neutrals
 
@@ -75,14 +61,3 @@ link".
 They back the three custom admonitions in `src/components/Admonitions/`. Each is
 muted relative to a pure signal colour (`#1F8F4A`, not `#00A726`) so it reads as
 a status marker next to the blue rather than competing with it.
-
-## Rules
-
-- Blue carries the brand. Reach for the primary ramp first.
-- Never hardcode a hex value in a component or page — use a token.
-- A new accent colour needs a semantic reason, not an aesthetic one. If it is
-  just decoration, use the blue ramp.
-- Every colour pair must clear WCAG AA (4.5:1 for body text, 3:1 for large text
-  and UI borders) in **both** light and dark mode. Check before committing.
-- Keep the two themes in sync: anything added to `:root` needs a
-  `[data-theme='dark']` counterpart.

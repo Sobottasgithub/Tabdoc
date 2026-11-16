@@ -7,7 +7,7 @@ sidebar_position: 1
 
 Tablo UDP Discovery.
 
-- Source: [Sobottasgithub/TUD](https://github.com/Sobottasgithub/TUD)
+- Github Page: [Sobottasgithub/TUD](https://github.com/Sobottasgithub/TUD)
 
 :::note
 
