@@ -14,4 +14,4 @@ seamlessly from a personal machine to large-scale server infrastructures.
 As you read through the documentation, you will not only learn how to use Tablo and TDFS and integrate the infrastructure
 repositories into your own projects, but you will also gain an understanding of how the individual projects function.
 This will give you a comprehensive overview of how everything fits together and enable you to contribute to the projects
- if you would like to help further enhance the Tablo experience for its users.
+if you would like to help further enhance the Tablo experience for its users.

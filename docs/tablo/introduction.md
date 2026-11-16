@@ -19,14 +19,14 @@ The Tablo master and node work hand in hand with TDFS to ensure redundant file s
 
 Two projects, six roles:
 
-| Role                   | Project    | Job                                                                            |
-| ---------------------- | ---------- | ------------------------------------------------------------------------------ |
-| Client                 | Tablo      | User interface. Connects to the master and executes operations.                |
-| Master                 | Tablo      | Access point for the client. distributes the workload over the nodes           |
-| Nodes                  | Tablo      | The heavy lifting. Executes TQL queries on the actual file snippets            |
-| Name server            | TDFS       | Holds information about the location of each file snippet                      |
-| Compute nodes          | TDFS       | Hold the distributed file storage itself. Serves as an access point for Tablo. |
-| Floating nodes         | TDFS       | Serves as an access point for Tablo. Can **not** store files                   |
+| Role           | Project | Job                                                                            |
+| -------------- | ------- | ------------------------------------------------------------------------------ |
+| Client         | Tablo   | User interface. Connects to the master and executes operations.                |
+| Master         | Tablo   | Access point for the client. distributes the workload over the nodes           |
+| Nodes          | Tablo   | The heavy lifting. Executes TQL queries on the actual file snippets            |
+| Name server    | TDFS    | Holds information about the location of each file snippet                      |
+| Compute nodes  | TDFS    | Hold the distributed file storage itself. Serves as an access point for Tablo. |
+| Floating nodes | TDFS    | Serves as an access point for Tablo. Can **not** store files                   |
 
 ```mermaid
 flowchart TD
