@@ -7,9 +7,9 @@ sidebar_position: 1
 
 Tablo is a distributed big data system to analyze your CSV files efficiently over multiple servers.
 
-Tablos performance is not dependent on the size of the file it is dependent on how fast your hardware is.
+Tablos performance is not dependent on the size of the file; it is dependent on how fast your hardware is.
 This is achieved by splitting your file over multiple nodes, working in parallel, managed by the master to ensure efficient distribution.
-That minimizes workload on your personal less powerfull machine and enables a smooth workflow.
+That minimizes workload on your personal less powerful machine and enables a smooth workflow.
 Each part of the [**Tablo core project**](https://github.com/Sobottasgithub/Tablo) will be explained below.
 
 ## What Tablo consists of
@@ -22,7 +22,7 @@ Two projects, six roles:
 | Role           | Project | Job                                                                            |
 | -------------- | ------- | ------------------------------------------------------------------------------ |
 | Client         | Tablo   | User interface. Connects to the master and executes operations.                |
-| Master         | Tablo   | Access point for the client. distributes the workload over the nodes           |
+| Master         | Tablo   | Access point for the client. Distributes the workload over the nodes           |
 | Nodes          | Tablo   | The heavy lifting. Executes TQL queries on the actual file snippets            |
 | Name server    | TDFS    | Holds information about the location of each file snippet                      |
 | Compute nodes  | TDFS    | Hold the distributed file storage itself. Serves as an access point for Tablo. |
@@ -65,7 +65,7 @@ The Tablo client acts as the user interface to access the Tablo master.
 The workload only consists of rendering the user interface and holding a connection to the master.
 This minimizes the workload on your own personal machine and ensures a smooth user experience on
 devices with less compute power. If a Tablo cluster already exists on your server, the client is
-"plug-and-play" ready. You only need to provied the server IP address and port and you are ready
+"plug-and-play" ready. You only need to provide the server IP address and port and you are ready
 to start with big data operations.
 
 ### The master
