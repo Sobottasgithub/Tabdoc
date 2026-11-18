@@ -3,7 +3,7 @@ title: Code
 sidebar_position: 1
 ---
 
-# Code
+# Code of Conduct
 
 The Tablo ecosystem is written in C++ 20.
 
