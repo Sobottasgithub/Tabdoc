@@ -5,12 +5,15 @@ sidebar_position: 1
 
 # Tablog
 
-The Tablo logging library.
+A thread safe logging library written in C++ designed for Tablo powered by Nix.
 
-- Github Page: [Sobottasgithub/Tablog](https://github.com/Sobottasgithub/Tablog)
+## What is Tablog
 
-:::note
+Tablog is a fast, user-friendly, and thread-safe logging library written in C++ powered by Nix.
+It offers log levels that are ready to use immediately, without any additional setup.
+The generated log data can be saved to a file. If you wish to customize the log output,
+Tablog can be configured either via a TOML file or by using a function.
 
-Not written yet. This page is a placeholder so the section exists.
+## Tablog on Github
 
-:::
+Source: [Sobottasgithub/Tablog](https://github.com/Sobottasgithub/Tablog)
