@@ -10,23 +10,23 @@ make sure to open the ports in your firewall.
 
 1. Run the client:
 
-    ```Bash
-    nix run github:Sobottasgithub/tud#client
-    ```
+   ```Bash
+   nix run github:Sobottasgithub/tud#client
+   ```
 
-    The client will ask you for your interface now. Provide the interface that is in the same network
-    as your server.
+   The client will ask you for your interface now. Provide the interface that is in the same network
+   as your server.
 
 2. Run the server:
 
-    ```Bash
-    nix run github:Sobottasgithub/tud#server
-    ```
+   ```Bash
+   nix run github:Sobottasgithub/tud#server
+   ```
 
-    The server will ask you for your interface now. Provide the interface that is in the same network
-    as your client.
+   The server will ask you for your interface now. Provide the interface that is in the same network
+   as your client.
 
-Done! If everything works, the client outputs the server's IP address and vice versa. 
+Done! If everything works, the client outputs the server's IP address and vice versa.
 
 # Source
 
