@@ -18,4 +18,4 @@ If everything works as intended you will see the IP addresses of the other peers
 
 # Source
 
-You can find the source code to the test implementation here: [TUD/test/peer](https://github.com/Sobottasgithub/TUD/tree/main/test/peer)
+You can find the source code of the test implementation here: [TUD/test/peer](https://github.com/Sobottasgithub/TUD/tree/main/test/peer)
