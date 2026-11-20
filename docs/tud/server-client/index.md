@@ -206,3 +206,11 @@ static std::string getBroadcastIpAddress();
 ```cpp
 static bool isValidIpV4(std::string &ipString);
 ```
+
+## Source
+
+Client on Github: [client_discovery.h](https://github.com/Sobottasgithub/TUD/blob/main/lib/tud/include/client_discovery.h)
+
+Server on Github: [server_discovery.h](https://github.com/Sobottasgithub/TUD/blob/main/lib/tud/include/server_discovery.h)
+
+Networking on Github: [networking.h](https://github.com/Sobottasgithub/TUD/blob/main/lib/tud/include/networking.h)
