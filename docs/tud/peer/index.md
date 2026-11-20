@@ -106,6 +106,18 @@ If a node shuts down you can remove it from the list of discovered peers.
 void removeDiscoveredAddress(std::string address);
 ```
 
+### IsConnected
+
+```cpp
+bool isConnected();
+```
+
+### Disconnect
+
+```cpp
+void disconnect();
+```
+
 ## Source
 
 Github: [peer_discovery.h](https://github.com/Sobottasgithub/TUD/blob/main/lib/tud/include/peer_discovery.h)
