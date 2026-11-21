@@ -147,7 +147,7 @@ void discoveryCycle();
 #### Constructor
 
 ```cpp
-ServerDiscovery(std::string interface, int inPort, int outPort, std::optional<std::string> identifier);
+ServerDiscovery(std::string interface, int inPort, int outPort, std::optional<std::string> identifier, const int interval = 1000);
 ```
 
 #### Discovery cylce

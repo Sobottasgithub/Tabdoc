@@ -68,7 +68,7 @@ Done! Now udp discovery is set up. You can start retrieving the discovered data 
 ### Constructor
 
 ```cpp
-PeerDiscovery(std::string interface, int port);
+PeerDiscovery(std::string interface, int port, const int interval = 1000);
 ```
 
 ### Discovery Cycle
